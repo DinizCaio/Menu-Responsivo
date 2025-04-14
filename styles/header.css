@@ -110,11 +110,19 @@ li a {
     align-items: center;
     justify-content: center;
   }
+
   .menuIcon {
     display: flex;
 
     box-sizing: border-box;
+    cursor: pointer;
   }
+
+  .menuIcon img {
+    width: 100%;
+    height: 100%;
+  }
+
   .logo {
     width: 100%;
     height: 100%;
@@ -140,7 +148,10 @@ li a {
     gap: 1.625rem;
 
     position: relative;
-    margin-top: -800%;
+  }
+  .toggle {
+    display: none;
+    transition: 1s ease;
   }
   .options {
     width: 100%;
@@ -207,5 +218,7 @@ li a {
     align-items: center;
 
     gap: 1rem;
+
+    border-bottom: 1px solid var(--grey-4);
   }
 }
