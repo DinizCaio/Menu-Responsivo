@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url(./reset.css);
+@import url(./header.css);
+
+body {
+  font-family: "Roboto";
+}
+
+:root {
+  --grey-1: #212528;
+  --grey-2: #868e96;
+  --grey-3: #adb5bd;
+  --grey-4: #e9ecef;
+  --grey-5: #f1f3f5;
+  --grey-6: #f8f9fa;
+}

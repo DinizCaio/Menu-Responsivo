@@ -1,0 +1,150 @@
+header {
+  width: 100%;
+  height: 5rem;
+
+  border-bottom: 0.125rem solid var(--grey-4);
+}
+
+.box {
+  width: 80%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+}
+
+.options ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 21.0625rem;
+
+  margin-left: 2rem;
+}
+
+li a {
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: var(--grey-2);
+}
+
+.optionAll {
+  color: var(--grey-1);
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+
+  width: 18.125rem;
+  height: 2.375rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  box-sizing: border-box;
+
+  width: 14.4375rem;
+  height: 2.375rem;
+
+  padding: 0.5rem;
+
+  border-radius: 0.5rem;
+
+  background-color: var(--grey-5);
+}
+
+.search input {
+  height: 100%;
+  width: 100%;
+
+  border: none;
+
+  background-color: var(--grey-5);
+}
+
+.menuIcon {
+  display: none;
+}
+
+.userName {
+  display: none;
+}
+
+@media (max-width: 320px) {
+  .box {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .menuIcon {
+    display: flex;
+  }
+  .logo {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 1rem 0 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .options ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 2rem;
+
+    margin: 0;
+    margin-top: 2rem;
+
+    border-bottom: 0.125rem solid var(--grey-4);
+  }
+  .options ul li {
+    width: 100%;
+    height: 100%;
+
+    margin-left: 2rem;
+  }
+}
